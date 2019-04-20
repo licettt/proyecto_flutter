@@ -9,6 +9,7 @@ class Artist {
     @required this.location,
     @required this.biography,
     @required this.videos,
+    @required this.imagenes,
   });
 
   final String firstName;
@@ -18,10 +19,23 @@ class Artist {
   final String location;
   final String biography;
   final List<Video> videos;
+  final List<Imagen> imagenes;
 }
 
 class Video {
   Video({
+    @required this.title,
+    @required this.thumbnail,
+    @required this.url,
+  });
+
+  final String title;
+  final String thumbnail;
+  final String url;
+}
+
+class Imagen {
+  Imagen({
     @required this.title,
     @required this.thumbnail,
     @required this.url,
