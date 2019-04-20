@@ -2,6 +2,7 @@ import 'dart:ui' as ui;
 
 import 'package:blurry_artist_details_page/models.dart';
 import 'package:blurry_artist_details_page/video_card.dart';
+import 'package:blurry_artist_details_page/imagen_card.dart';
 import 'package:flutter/material.dart';
 
 class ArtistDetailsPage extends StatelessWidget {
@@ -16,6 +17,7 @@ class ArtistDetailsPage extends StatelessWidget {
           _buildAvatar(),
           _buildInfo(),
           _buildVideoScroller(),
+          _buildImageScroller(),
         ],
       ),
     );
@@ -88,6 +90,24 @@ class ArtistDetailsPage extends StatelessWidget {
           itemBuilder: (BuildContext context, int index) {
             var video = artist.videos[index];
             return VideoCard(video);
+          },
+        ),
+      ),
+    );
+  }
+
+  Widget _buildImageScroller() {
+    return Padding(
+      padding: const EdgeInsets.only(top: 16.0),
+      child: SizedBox.fromSize(
+        size: Size.fromHeight(245.0),
+        child: ListView.builder(
+          scrollDirection: Axis.horizontal,
+          padding: const EdgeInsets.symmetric(horizontal: 8.0),
+          itemCount: artist.imagenes.length,
+          itemBuilder: (BuildContext context, int index) {
+            var imagen = artist.imagenes[index];
+            return ImagenCard(imagen);
           },
         ),
       ),
