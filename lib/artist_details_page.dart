@@ -4,6 +4,7 @@ import 'package:blurry_artist_details_page/models.dart';
 import 'package:blurry_artist_details_page/video_card.dart';
 import 'package:blurry_artist_details_page/imagen_card.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_radio/flutter_radio.dart';
 
 class ArtistDetailsPage extends StatelessWidget {
   ArtistDetailsPage(this.artist);
@@ -18,6 +19,7 @@ class ArtistDetailsPage extends StatelessWidget {
           _buildInfo(),
           _buildVideoScroller(),
           _buildImageScroller(),
+
         ],
       ),
     );
@@ -113,6 +115,34 @@ class ArtistDetailsPage extends StatelessWidget {
       ),
     );
   }
+
+  //radiooooo
+
+  Widget _buildRadio() {
+    String url = "http://server.bitstreaming.net:9016/stream";
+    return new MaterialApp(
+      home: new Scaffold(
+
+        body: new Center(
+            child: Column(
+              children: <Widget>[
+                FlatButton(
+                  child: Icon(Icons.play_circle_filled),
+                  onPressed: () => FlutterRadio.play(url: url),
+                ),
+                FlatButton(
+                  child: Icon(Icons.pause_circle_filled),
+                  onPressed: () => FlutterRadio.pause(),
+                )
+              ],
+            )
+        ),
+      ),
+    );
+  }
+
+
+
 
   @override
   Widget build(BuildContext context) {
