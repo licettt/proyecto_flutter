@@ -7,10 +7,10 @@ void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   static final Artist andy = Artist(
-    firstName: 'Andy',
-    lastName: 'Fraser',
-    avatar: 'assets/avatar.png',
-    backdropPhoto: 'assets/fondo1.png',
+    firstName: 'Tu Radio',
+    lastName: 'Favorita',
+    avatar: 'assets/logo1.jpg',
+    backdropPhoto: 'assets/fondo2.jpg',
     location: 'London, England',
     biography: 'Andrew McLan "Andy" Fraser was an English songwriter and bass '
         'guitarist whose career lasted over forty years, and includes two spells '
