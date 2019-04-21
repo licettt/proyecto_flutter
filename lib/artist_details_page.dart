@@ -31,8 +31,9 @@ class ArtistDetailsPage extends StatelessWidget {
         children: <Widget>[
           _buildLogo(),
           Container(
-            width: 100.0,
-            height: 100.0,
+            width: 110.0,
+            height: 110.0,
+            color: Color(0x00000000),
             margin: const EdgeInsets.only(top: 25.0, left: 130.0),
             padding: const EdgeInsets.all(3.0),
             child: radioo,),

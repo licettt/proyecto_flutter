@@ -39,15 +39,15 @@ class _MyAppState extends State<MyApp> {
                   child: Column(
                     children: <Widget>[
                       new Container(
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          border: Border.all(color: Colors.purple[900]),
-                        ),
+                        //decoration: BoxDecoration(
+                       //   shape: BoxShape.circle,
+                       //   border: Border.all(color: Colors.purple[900]),
+                       // ),
                         child: new ButtonTheme(
                           // minWidth: double.infinity,
                           child: MaterialButton(
-                            //child: Image.asset('assets/logo1.jpg'),
-                            child: Icon(Icons.play_circle_filled, color: Colors.black87,),
+                            child: Image.asset('assets/logo1.png'),
+                            //child: Icon(Icons.play_circle_filled, color: Colors.black87,),
 
                             onPressed: () => FlutterRadio.play(url: url),
 
