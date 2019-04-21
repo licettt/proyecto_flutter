@@ -5,21 +5,43 @@ import 'package:blurry_artist_details_page/video_card.dart';
 import 'package:blurry_artist_details_page/imagen_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_radio/flutter_radio.dart';
+import 'package:blurry_artist_details_page/radio.dart';
 
 class ArtistDetailsPage extends StatelessWidget {
   ArtistDetailsPage(this.artist);
   final Artist artist;
+  String url = "http://server.bitstreaming.net:9016/stream";
+  MyApp radioo = new MyApp();
+
+  @override
+  void initState() {
+   // super.initState();
+    audioStart();
+  }
+
+  Future<void> audioStart() async {
+    await FlutterRadio.audioStart();
+    print('Audio Start OK');
+  }
 
   Widget _buildContent() {
+
     return SingleChildScrollView(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
+          FlatButton(
+            child: Icon(Icons.play_circle_filled),
+            onPressed: () => FlutterRadio.play(url: url),
+          ),
+          FlatButton(
+            child: Icon(Icons.pause_circle_filled),
+            onPressed: () => FlutterRadio.pause(),
+          ),
           _buildAvatar(),
           _buildInfo(),
           _buildVideoScroller(),
           _buildImageScroller(),
-
         ],
       ),
     );
@@ -38,6 +60,7 @@ class ArtistDetailsPage extends StatelessWidget {
       child: ClipOval(
         child: Image.asset(artist.avatar),
       ),
+
     );
   }
 
@@ -116,34 +139,6 @@ class ArtistDetailsPage extends StatelessWidget {
     );
   }
 
-  //radiooooo
-
-  Widget _buildRadio() {
-    String url = "http://server.bitstreaming.net:9016/stream";
-    return new MaterialApp(
-      home: new Scaffold(
-
-        body: new Center(
-            child: Column(
-              children: <Widget>[
-                FlatButton(
-                  child: Icon(Icons.play_circle_filled),
-                  onPressed: () => FlutterRadio.play(url: url),
-                ),
-                FlatButton(
-                  child: Icon(Icons.pause_circle_filled),
-                  onPressed: () => FlutterRadio.pause(),
-                )
-              ],
-            )
-        ),
-      ),
-    );
-  }
-
-
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -159,6 +154,7 @@ class ArtistDetailsPage extends StatelessWidget {
             ),
           ),
         ],
+
       ),
     );
   }

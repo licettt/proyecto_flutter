@@ -1,4 +1,5 @@
 import 'package:meta/meta.dart';
+import 'package:blurry_artist_details_page/radio.dart';
 
 class Artist {
   Artist({
@@ -10,6 +11,7 @@ class Artist {
     @required this.biography,
     @required this.videos,
     @required this.imagenes,
+    //@required this.radio
   });
 
   final String firstName;
@@ -20,6 +22,7 @@ class Artist {
   final String biography;
   final List<Video> videos;
   final List<Imagen> imagenes;
+  //final MyApp radio;
 }
 
 class Video {

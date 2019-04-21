@@ -45,6 +45,28 @@ class _MyAppState extends State<MyApp> {
       ),
     );
   }
+
+  /*Widget _buildRadio() {
+    return new MaterialApp(
+      home: new Scaffold(
+
+        body: new Center(
+            child: Column(
+              children: <Widget>[
+                FlatButton(
+                  child: Icon(Icons.play_circle_filled),
+                  onPressed: () => FlutterRadio.play(url: url),
+                ),
+                FlatButton(
+                  child: Icon(Icons.pause_circle_filled),
+                  onPressed: () => FlutterRadio.pause(),
+                )
+              ],
+            )
+        ),
+      ),
+    );
+  }*/
 }
 
 

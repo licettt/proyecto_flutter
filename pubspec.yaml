@@ -19,8 +19,12 @@ flutter:
   - assets/backdrop.png
   - assets/fondo1.png
   - assets/fondo2.jpg
-  - assets/video1_thumb.png
   - assets/video4_thumb.png
   - assets/video3_thumb.png
   - assets/video2_thumb.png
   - assets/logo1.jpg
+  - assets/toby.jpg
+  - assets/video1.jpg
+  - assets/video2.jpg
+  - assets/video3.jpg
+  - assets/video4.jpg
