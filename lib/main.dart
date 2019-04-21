@@ -37,11 +37,11 @@ class MyApp extends StatelessWidget {
     ],
     imagenes: <Imagen>[
       Imagen(
-        thumbnail: 'assets/imagen1.jpg',
+        thumbnail: 'assets/tobyo.jpg',
         url: 'http://www.hamburguesastoby.com',
       ),
       Imagen(
-        thumbnail: 'assets/imagen1.jpg',
+        thumbnail: 'assets/tobyo.jpg',
         url: 'http://www.hamburguesastoby.com',
       ),
       Imagen(

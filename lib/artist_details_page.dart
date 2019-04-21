@@ -29,14 +29,14 @@ class ArtistDetailsPage extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          FlatButton(
+          /*FlatButton(
             child: Icon(Icons.play_circle_filled),
             onPressed: () => FlutterRadio.play(url: url),
           ),
           FlatButton(
             child: Icon(Icons.pause_circle_filled),
             onPressed: () => FlutterRadio.pause(),
-          ),
+          ),*/
           _buildLogo(),
           _buildText(),
           _buildVideoList(),
@@ -48,13 +48,13 @@ class ArtistDetailsPage extends StatelessWidget {
 
   Widget _buildLogo() {
     return Container(
-      width: 85.0,
-      height: 85.0,
+      width: 100.0,
+      height: 100.0,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        border: Border.all(color: Colors.white30),
+        border: Border.all(color: Colors.yellow),
       ),
-      margin: const EdgeInsets.only(top: 40.0, left: 130.0),
+      margin: const EdgeInsets.only(top: 25.0, left: 130.0),
       padding: const EdgeInsets.all(3.0),
       child: ClipOval(
         child: Image.asset(artist.avatar),

@@ -14,7 +14,7 @@ class ImagenCard extends StatelessWidget {
         BoxShadow(
           spreadRadius: 1.0,
           blurRadius: 0.0,
-          color: Colors.blue,
+          color: Colors.purple[900],
         ),
       ],
     );
@@ -27,7 +27,7 @@ class ImagenCard extends StatelessWidget {
         children: <Widget>[
           Image.asset(imagen.thumbnail),
           Positioned(
-            bottom: 12.0,
+            bottom: 50.0,
             right: 12.0,
             child: _buildPlayButton(),
           ),
@@ -38,7 +38,7 @@ class ImagenCard extends StatelessWidget {
 
   Widget _buildPlayButton() {
     return Material(
-      color: Colors.blue,
+      color: Colors.black,
       type: MaterialType.circle,
       child: InkWell(
         onTap: () async {
