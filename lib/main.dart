@@ -42,19 +42,19 @@ class MyApp extends StatelessWidget {
       ),
       Imagen(
         thumbnail: 'assets/colgate.jpeg',
-        url: 'http://www.hamburguesastoby.com',
+        url: 'https://www.colgate.com/es-bo/oral-health',
       ),
       Imagen(
         thumbnail: 'assets/pampers.jpeg',
-        url: 'http://www.hamburguesastoby.com',
+        url: 'https://www.pampers.com.ar/',
       ),
       Imagen(
         thumbnail: 'assets/pantene.jpeg',
-        url: 'http://www.hamburguesastoby.com',
+        url: 'https://www.pantene.com.co/es-co',
       ),
       Imagen(
         thumbnail: 'assets/fairplay.png',
-        url: 'http://www.hamburguesastoby.com',
+        url: 'https://www.fairplay.com.bo/',
       ),
     ],
 
