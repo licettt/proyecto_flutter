@@ -72,9 +72,9 @@ class ArtistDetailsPage extends StatelessWidget {
           Text(
             artist.firstName + '\n' + artist.lastName,
             style: TextStyle(
-              color: Colors.white,
+              color: Colors.red[900],
               fontWeight: FontWeight.bold,
-              fontSize: 30.0,
+              fontSize: 20.0,
             ),
           ),
 
@@ -141,9 +141,9 @@ class ArtistDetailsPage extends StatelessWidget {
         children: <Widget>[
           Image.asset(artist.backdropPhoto, fit: BoxFit.cover),
           BackdropFilter(
-            filter: ui.ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
+            filter: ui.ImageFilter.blur(sigmaX: 1.0, sigmaY: 1.0),
             child: Container(
-              color: Colors.black.withOpacity(0.5),
+              color: Colors.black.withOpacity(0.3),
               child: _buildContent(),
             ),
           ),

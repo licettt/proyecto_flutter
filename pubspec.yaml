@@ -17,6 +17,11 @@ flutter:
   assets:
   - assets/fondo1.png
   - assets/fondo2.jpg
+  - assets/fondo3.jpg
+  - assets/fondo4.jpg
+  - assets/fondo5.jpg
+  - assets/fondo6.jpg
+  - assets/fondo7.jpg
   - assets/logo1.jpg
   - assets/video1.jpg
   - assets/video2.jpg

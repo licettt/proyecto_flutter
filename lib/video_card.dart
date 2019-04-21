@@ -12,8 +12,8 @@ class VideoCard extends StatelessWidget {
       borderRadius: BorderRadius.circular(10.0),
       boxShadow: <BoxShadow>[
         BoxShadow(
-          spreadRadius: 2.0,
-          blurRadius: 10.0,
+          spreadRadius: 1.0,
+          blurRadius: 0.0,
           color: Colors.red,
         ),
       ],

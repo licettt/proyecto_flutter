@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
     firstName: '',
     lastName: '',
     avatar: 'assets/logo1.jpg',
-    backdropPhoto: 'assets/fondo2.jpg',
+    backdropPhoto: 'assets/fondo7.jpg',
     biography: 'Galeria de Videos ',
 
     videos: <Video>[
