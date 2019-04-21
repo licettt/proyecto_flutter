@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
-
+import 'dart:ui' as ui;
 import 'package:flutter_radio/flutter_radio.dart';
 // esto es parte de la radio
 class MyApp extends StatefulWidget {
@@ -28,11 +28,60 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return new MaterialApp(
       home: new Scaffold(
-        body: new Center(
+
+        backgroundColor: const Color(0x00000000).withOpacity(0.0),
+        body: Stack(
+          fit: StackFit.expand,
+          children: <Widget>[
+            //Image.asset('assets/fondo7.jpg', fit: BoxFit.cover),
+
+            BackdropFilter(
+              filter: ui.ImageFilter.blur(sigmaX: 1.0, sigmaY: 1.0),
+              child: Container(
+                color: Colors.black.withOpacity(0.0),
+                  child: Column(
+                    children: <Widget>[
+                      new Container(
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: Border.all(color: Colors.purple[900]),
+                        ),
+                        child: new ButtonTheme(
+                          // minWidth: double.infinity,
+                          child: MaterialButton(
+                            child: Icon(Icons.play_circle_filled),
+                            onPressed: () => FlutterRadio.play(url: url),
+                            //child: Image.asset('assets/logo1.jpg'),
+                          ),
+                        ),
+                      )
+
+                      /*RaisedButton(
+                  child: const Text('Connect with Twitter'),
+                  color: Theme.of(context).accentColor,
+                  elevation: 4.0,
+                  splashColor: Colors.blueGrey,
+                  onPressed: () => FlutterRadio.play(url: url),
+                ),*/
+
+                    ],
+                  )
+              ),
+            ),
+          ],
+
+        ),
+
+
+
+       /* body: new Center(
             child: Column(
               children: <Widget>[
                 new Container(
-
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    border: Border.all(color: Colors.yellow),
+                  ),
                   child: new ButtonTheme(
                     // minWidth: double.infinity,
                     child: MaterialButton(
@@ -52,7 +101,7 @@ class _MyAppState extends State<MyApp> {
 
               ],
             )
-        ),
+        ),*/
       ),
     );
   }

@@ -45,9 +45,9 @@ class ArtistDetailsPage extends StatelessWidget {
             /*decoration: BoxDecoration(
               shape: BoxShape.circle,
               border: Border.all(color: Colors.yellow),
-            ),
+            ),*/
             margin: const EdgeInsets.only(top: 25.0, left: 130.0),
-            padding: const EdgeInsets.all(3.0),*/
+            padding: const EdgeInsets.all(3.0),
             child: radioo,),
           _buildText(),
           _buildVideoList(),
