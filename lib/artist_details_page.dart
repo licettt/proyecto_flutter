@@ -38,10 +38,22 @@ class ArtistDetailsPage extends StatelessWidget {
             onPressed: () => FlutterRadio.pause(),
           ),*/
           _buildLogo(),
+          Container(
+            //decoration: new BoxDecoration(color: Colors.red),
+            width: 100.0,
+            height: 100.0,
+            /*decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              border: Border.all(color: Colors.yellow),
+            ),
+            margin: const EdgeInsets.only(top: 25.0, left: 130.0),
+            padding: const EdgeInsets.all(3.0),*/
+            child: radioo,),
           _buildText(),
           _buildVideoList(),
           _buildTextImages(),
           _buildImageList(),
+
         ],
       ),
     );
