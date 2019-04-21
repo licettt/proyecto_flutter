@@ -14,7 +14,7 @@ class ImagenCard extends StatelessWidget {
         BoxShadow(
           spreadRadius: 2.0,
           blurRadius: 10.0,
-          color: Colors.black26,
+          color: Colors.blueAccent,
         ),
       ],
     );
@@ -49,7 +49,7 @@ class ImagenCard extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Icon(
-            Icons.play_arrow,
+            Icons.http,
             color: Colors.white,
           ),
         ),
@@ -59,11 +59,8 @@ class ImagenCard extends StatelessWidget {
 
   Widget _buildInfo() {
     return Padding(
-      padding: const EdgeInsets.only(top: 16.0, left: 4.0, right: 4.0),
-      child: Text(
-        imagen.title,
-        style: TextStyle(color: Colors.white.withOpacity(0.85)),
-      ),
+      padding: const EdgeInsets.only(top: 0.0, left: 4.0, right: 4.0),
+
     );
   }
 
@@ -78,7 +75,7 @@ class ImagenCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Flexible(flex: 3, child: _buildThumbnail()),
-          Flexible(flex: 2, child: _buildInfo()),
+          //Flexible(flex: 2, child: _buildInfo()),
         ],
       ),
     );

@@ -1,5 +1,4 @@
 import 'dart:ui' as ui;
-
 import 'package:blurry_artist_details_page/models.dart';
 import 'package:blurry_artist_details_page/video_card.dart';
 import 'package:blurry_artist_details_page/imagen_card.dart';
@@ -38,16 +37,16 @@ class ArtistDetailsPage extends StatelessWidget {
             child: Icon(Icons.pause_circle_filled),
             onPressed: () => FlutterRadio.pause(),
           ),
-          _buildAvatar(),
-          _buildInfo(),
-          _buildVideoScroller(),
-          _buildImageScroller(),
+          _buildLogo(),
+          _buildText(),
+          _buildVideoList(),
+          _buildImageList(),
         ],
       ),
     );
   }
 
-  Widget _buildAvatar() {
+  Widget _buildLogo() {
     return Container(
       width: 85.0,
       height: 85.0,
@@ -64,7 +63,7 @@ class ArtistDetailsPage extends StatelessWidget {
     );
   }
 
-  Widget _buildInfo() {
+  Widget _buildText() {
     return Padding(
       padding: const EdgeInsets.only(top: 16.0, left: 16.0, right: 16.0),
       child: Column(
@@ -78,13 +77,7 @@ class ArtistDetailsPage extends StatelessWidget {
               fontSize: 30.0,
             ),
           ),
-          Text(
-            artist.location,
-            style: TextStyle(
-              color: Colors.white.withOpacity(0.85),
-              fontWeight: FontWeight.w500,
-            ),
-          ),
+
           Container(
             color: Colors.white.withOpacity(0.85),
             margin: const EdgeInsets.symmetric(vertical: 16.0),
@@ -103,7 +96,7 @@ class ArtistDetailsPage extends StatelessWidget {
     );
   }
 
-  Widget _buildVideoScroller() {
+  Widget _buildVideoList() {
     return Padding(
       padding: const EdgeInsets.only(top: 16.0),
       child: SizedBox.fromSize(
@@ -121,14 +114,15 @@ class ArtistDetailsPage extends StatelessWidget {
     );
   }
 
-  Widget _buildImageScroller() {
+  Widget _buildImageList() {
     return Padding(
+
       padding: const EdgeInsets.only(top: 16.0),
       child: SizedBox.fromSize(
-        size: Size.fromHeight(245.0),
+        size: Size.fromHeight(200.0),
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
-          padding: const EdgeInsets.symmetric(horizontal: 8.0),
+          padding: const EdgeInsets.symmetric(horizontal: 10.0),
           itemCount: artist.imagenes.length,
           itemBuilder: (BuildContext context, int index) {
             var imagen = artist.imagenes[index];

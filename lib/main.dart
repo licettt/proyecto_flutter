@@ -2,7 +2,6 @@ import 'package:blurry_artist_details_page/artist_details_page.dart';
 import 'package:blurry_artist_details_page/models.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:blurry_artist_details_page/radio.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,7 +11,6 @@ class MyApp extends StatelessWidget {
     lastName: 'Favorita',
     avatar: 'assets/logo1.jpg',
     backdropPhoto: 'assets/fondo2.jpg',
-    location: 'London, England',
     biography: 'Galeria de Videos ',
 
     videos: <Video>[
@@ -39,24 +37,20 @@ class MyApp extends StatelessWidget {
     ],
     imagenes: <Imagen>[
       Imagen(
-        //title: 'Toby ',
         thumbnail: 'assets/imagen1.jpg',
         url: 'http://www.hamburguesastoby.com',
       ),
       Imagen(
-        //title: 'Free - Ride on a Pony - Live at Granada Studios 1970',
-        thumbnail: 'assets/backdrop.png',
-        url: 'https://www.youtube.com/watch?v=EDHNZuAnBoU',
+        thumbnail: 'assets/imagen1.jpg',
+        url: 'http://www.hamburguesastoby.com',
       ),
       Imagen(
-        //title: 'Free - Songs of Yesterday - Live at Granada Studios 1970',
-        thumbnail: 'assets/backdrop.png',
-        url: 'https://www.youtube.com/watch?v=eI1FT0a_bos',
+        thumbnail: 'assets/imagen1.jpg',
+        url: 'http://www.hamburguesastoby.com',
       ),
       Imagen(
-        //title: 'Free - I\'ll Be Creepin\' - Live at Granada Studios 1970',
-        thumbnail: 'assets/backdrop.png',
-        url: 'https://www.youtube.com/watch?v=3qK8O3UoqN8',
+        thumbnail: 'assets/imagen1.jpg',
+        url: 'http://www.hamburguesastoby.com',
       ),
     ],
 

@@ -15,13 +15,8 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-  - assets/avatar.png
-  - assets/backdrop.png
   - assets/fondo1.png
   - assets/fondo2.jpg
-  - assets/video4_thumb.png
-  - assets/video3_thumb.png
-  - assets/video2_thumb.png
   - assets/logo1.jpg
   - assets/video1.jpg
   - assets/video2.jpg
