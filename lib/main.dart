@@ -9,10 +9,9 @@ class MyApp extends StatelessWidget {
   static final Artist andy = Artist(
     firstName: '',
     lastName: '',
-    avatar: 'assets/logo1.jpg',
+    avatar: 'assets/logo3.png',
     backdropPhoto: 'assets/fondo7.jpg',
     biography: 'Galeria de Videos ',
-
     videos: <Video>[
       Video(
         title: 'Chayanne - Humanos a Marte (Official Music Video)',
@@ -35,21 +34,26 @@ class MyApp extends StatelessWidget {
         url: 'https://www.youtube.com/watch?v=KuM7jzv6io8',
       ),
     ],
+    labelimages: "Nuestros clientes",
     imagenes: <Imagen>[
       Imagen(
-        thumbnail: 'assets/tobyo.jpg',
+        thumbnail: 'assets/coca.jpeg',
+        url: 'http://www.cocacolalatinamerica.com/es/bo/home/',
+      ),
+      Imagen(
+        thumbnail: 'assets/colgate.jpeg',
         url: 'http://www.hamburguesastoby.com',
       ),
       Imagen(
-        thumbnail: 'assets/tobyo.jpg',
+        thumbnail: 'assets/pampers.jpeg',
         url: 'http://www.hamburguesastoby.com',
       ),
       Imagen(
-        thumbnail: 'assets/imagen1.jpg',
+        thumbnail: 'assets/pantene.jpeg',
         url: 'http://www.hamburguesastoby.com',
       ),
       Imagen(
-        thumbnail: 'assets/imagen1.jpg',
+        thumbnail: 'assets/fairplay.png',
         url: 'http://www.hamburguesastoby.com',
       ),
     ],

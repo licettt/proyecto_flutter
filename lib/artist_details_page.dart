@@ -40,6 +40,7 @@ class ArtistDetailsPage extends StatelessWidget {
           _buildLogo(),
           _buildText(),
           _buildVideoList(),
+          _buildTextImages(),
           _buildImageList(),
         ],
       ),
@@ -78,23 +79,44 @@ class ArtistDetailsPage extends StatelessWidget {
             ),
           ),
 
-          Container(
+          /*Container(
             color: Colors.white.withOpacity(0.85),
             margin: const EdgeInsets.symmetric(vertical: 16.0),
             width: 225.0,
             height: 1.0,
-          ),
+          ),*/
           Text(
             artist.biography,
             style: TextStyle(
               color: Colors.white.withOpacity(0.85),
               height: 1.4,
+              fontSize: 20.0,
             ),
           ),
         ],
       ),
     );
   }
+
+  Widget _buildTextImages() {
+    return Padding(
+      padding: const EdgeInsets.only(top: 16.0, left: 16.0, right: 16.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Text(
+            artist.labelimages,
+            style: TextStyle(
+              color: Colors.white.withOpacity(0.85),
+              height: 1.4,
+              fontSize: 20.0,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
 
   Widget _buildVideoList() {
     return Padding(
