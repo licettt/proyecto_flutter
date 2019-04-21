@@ -1,10 +1,10 @@
 import 'dart:ui' as ui;
-import 'package:blurry_artist_details_page/models.dart';
-import 'package:blurry_artist_details_page/video_card.dart';
-import 'package:blurry_artist_details_page/imagen_card.dart';
+import 'package:proyecto_flutter/models.dart';
+import 'package:proyecto_flutter/video_card.dart';
+import 'package:proyecto_flutter/imagen_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_radio/flutter_radio.dart';
-import 'package:blurry_artist_details_page/radio.dart';
+import 'package:proyecto_flutter/radio.dart';
 
 class ArtistDetailsPage extends StatelessWidget {
   ArtistDetailsPage(this.artist);

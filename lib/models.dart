@@ -1,5 +1,5 @@
 import 'package:meta/meta.dart';
-import 'package:blurry_artist_details_page/radio.dart';
+import 'package:proyecto_flutter/radio.dart';
 
 class Artist {
   Artist({

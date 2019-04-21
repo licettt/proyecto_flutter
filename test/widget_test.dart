@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:blurry_artist_details_page/main.dart';
+import 'package:proyecto_flutter/main.dart';
 
 void main() {
   testWidgets('smoke test', (WidgetTester tester) async {
