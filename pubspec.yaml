@@ -15,18 +15,11 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-  - assets/fondo1.png
-  - assets/fondo2.jpg
-  - assets/fondo3.jpg
-  - assets/fondo4.jpg
-  - assets/fondo5.jpg
-  - assets/fondo6.jpg
   - assets/fondo7.jpg
   - assets/tobyo.jpg
   - assets/logo1.jpg
+  - assets/logo7.png
   - assets/coca.jpeg
-  - assets/logo2.png
-  - assets/logo3.png
   - assets/pampers.jpeg
   - assets/pantene.jpeg
   - assets/colgate.jpeg
@@ -35,4 +28,3 @@ flutter:
   - assets/video2.jpg
   - assets/video3.jpg
   - assets/video4.jpg
-  - assets/imagen1.jpg

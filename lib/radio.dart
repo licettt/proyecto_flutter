@@ -49,21 +49,14 @@ class _MyAppState extends State<MyApp> {
                         child: new ButtonTheme(
                           // minWidth: double.infinity,
                           child: MaterialButton(
-                            child: Icon(Icons.play_circle_filled),
-                            onPressed: () => FlutterRadio.play(url: url),
                             //child: Image.asset('assets/logo1.jpg'),
+                            child: Icon(Icons.play_circle_filled, color: Colors.purple[900],),
+
+                            onPressed: () => FlutterRadio.play(url: url),
+
                           ),
                         ),
                       )
-
-                      /*RaisedButton(
-                  child: const Text('Connect with Twitter'),
-                  color: Theme.of(context).accentColor,
-                  elevation: 4.0,
-                  splashColor: Colors.blueGrey,
-                  onPressed: () => FlutterRadio.play(url: url),
-                ),*/
-
                     ],
                   )
               ),
@@ -72,62 +65,9 @@ class _MyAppState extends State<MyApp> {
 
         ),
 
-
-
-       /* body: new Center(
-            child: Column(
-              children: <Widget>[
-                new Container(
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    border: Border.all(color: Colors.yellow),
-                  ),
-                  child: new ButtonTheme(
-                    // minWidth: double.infinity,
-                    child: MaterialButton(
-                      onPressed: () => FlutterRadio.play(url: url),
-                      child: Image.asset('assets/logo1.jpg'),
-                    ),
-                  ),
-                )
-
-                /*RaisedButton(
-                  child: const Text('Connect with Twitter'),
-                  color: Theme.of(context).accentColor,
-                  elevation: 4.0,
-                  splashColor: Colors.blueGrey,
-                  onPressed: () => FlutterRadio.play(url: url),
-                ),*/
-
-              ],
-            )
-        ),*/
       ),
     );
   }
-
-
-  /*Widget _buildRadio() {
-    return new MaterialApp(
-      home: new Scaffold(
-
-        body: new Center(
-            child: Column(
-              children: <Widget>[
-                FlatButton(
-                  child: Icon(Icons.play_circle_filled),
-                  onPressed: () => FlutterRadio.play(url: url),
-                ),
-                FlatButton(
-                  child: Icon(Icons.pause_circle_filled),
-                  onPressed: () => FlutterRadio.pause(),
-                )
-              ],
-            )
-        ),
-      ),
-    );
-  }*/
 }
 
 

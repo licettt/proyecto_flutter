@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   static final Artist andy = Artist(
     firstName: '',
     lastName: '',
-    avatar: 'assets/logo1.jpg',
+    avatar: 'assets/logo7.png',
     backdropPhoto: 'assets/fondo7.jpg',
     biography: 'Galeria de Videos ',
     videos: <Video>[

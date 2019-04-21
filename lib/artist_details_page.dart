@@ -61,13 +61,13 @@ class ArtistDetailsPage extends StatelessWidget {
 
   Widget _buildLogo() {
     return Container(
-      width: 100.0,
-      height: 100.0,
+      width: 110.0,
+      height: 110.0,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         border: Border.all(color: Colors.yellow),
       ),
-      margin: const EdgeInsets.only(top: 25.0, left: 130.0),
+      margin: const EdgeInsets.only(top: 35.0, left: 130.0),
       padding: const EdgeInsets.all(3.0),
       child: ClipOval(
         child: Image.asset(artist.avatar),
