@@ -33,6 +33,11 @@ class MyApp extends StatelessWidget {
         thumbnail: 'assets/video4.jpg',
         url: 'https://www.youtube.com/watch?v=KuM7jzv6io8',
       ),
+      Video(
+        title: 'DILE AL AMOR AVENTURA BACHATA (OFFICIAL HD)',
+        thumbnail: 'assets/video5.jpg',
+        url: 'https://www.youtube.com/watch?v=WivMb-s_UHI&list=RDpVE1ahwklf4&index=6',
+      ),
     ],
     labelimages: "Nuestros anunciantes",
     imagenes: <Imagen>[
