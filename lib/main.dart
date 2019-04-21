@@ -39,22 +39,22 @@ class MyApp extends StatelessWidget {
     ],
     imagenes: <Imagen>[
       Imagen(
-        title: 'Toby ',
-        thumbnail: 'assets/toby.jpg',
+        //title: 'Toby ',
+        thumbnail: 'assets/imagen1.jpg',
         url: 'http://www.hamburguesastoby.com',
       ),
       Imagen(
-        title: 'Free - Ride on a Pony - Live at Granada Studios 1970',
+        //title: 'Free - Ride on a Pony - Live at Granada Studios 1970',
         thumbnail: 'assets/backdrop.png',
         url: 'https://www.youtube.com/watch?v=EDHNZuAnBoU',
       ),
       Imagen(
-        title: 'Free - Songs of Yesterday - Live at Granada Studios 1970',
+        //title: 'Free - Songs of Yesterday - Live at Granada Studios 1970',
         thumbnail: 'assets/backdrop.png',
         url: 'https://www.youtube.com/watch?v=eI1FT0a_bos',
       ),
       Imagen(
-        title: 'Free - I\'ll Be Creepin\' - Live at Granada Studios 1970',
+        //title: 'Free - I\'ll Be Creepin\' - Live at Granada Studios 1970',
         thumbnail: 'assets/backdrop.png',
         url: 'https://www.youtube.com/watch?v=3qK8O3UoqN8',
       ),
