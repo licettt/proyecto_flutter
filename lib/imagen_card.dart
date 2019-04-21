@@ -38,7 +38,7 @@ class ImagenCard extends StatelessWidget {
 
   Widget _buildPlayButton() {
     return Material(
-      color: Colors.black87,
+      color: Colors.blue,
       type: MaterialType.circle,
       child: InkWell(
         onTap: () async {

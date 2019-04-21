@@ -14,7 +14,7 @@ class VideoCard extends StatelessWidget {
         BoxShadow(
           spreadRadius: 2.0,
           blurRadius: 10.0,
-          color: Colors.redAccent,
+          color: Colors.red,
         ),
       ],
     );
@@ -38,7 +38,7 @@ class VideoCard extends StatelessWidget {
 
   Widget _buildPlayButton() {
     return Material(
-      color: Colors.black87,
+      color: Colors.red,
       type: MaterialType.circle,
       child: InkWell(
         onTap: () async {

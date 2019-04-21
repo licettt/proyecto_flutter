@@ -7,8 +7,8 @@ void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   static final Artist andy = Artist(
-    firstName: 'Tu Radio',
-    lastName: 'Favorita',
+    firstName: '',
+    lastName: '',
     avatar: 'assets/logo1.jpg',
     backdropPhoto: 'assets/fondo2.jpg',
     biography: 'Galeria de Videos ',
