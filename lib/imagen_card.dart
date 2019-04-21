@@ -14,7 +14,7 @@ class ImagenCard extends StatelessWidget {
         BoxShadow(
           spreadRadius: 1.0,
           blurRadius: 0.0,
-          color: Colors.purple[900],
+          color: Colors.black87,
         ),
       ],
     );

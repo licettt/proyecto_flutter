@@ -47,7 +47,7 @@ class _MyAppState extends State<MyApp> {
                           // minWidth: double.infinity,
                           child: MaterialButton(
                             //child: Image.asset('assets/logo1.jpg'),
-                            child: Icon(Icons.play_circle_filled, color: Colors.purple[900],),
+                            child: Icon(Icons.play_circle_filled, color: Colors.black87,),
 
                             onPressed: () => FlutterRadio.play(url: url),
 
