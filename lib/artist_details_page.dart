@@ -29,23 +29,10 @@ class ArtistDetailsPage extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          /*FlatButton(
-            child: Icon(Icons.play_circle_filled),
-            onPressed: () => FlutterRadio.play(url: url),
-          ),
-          FlatButton(
-            child: Icon(Icons.pause_circle_filled),
-            onPressed: () => FlutterRadio.pause(),
-          ),*/
           _buildLogo(),
           Container(
-            //decoration: new BoxDecoration(color: Colors.red),
             width: 100.0,
             height: 100.0,
-            /*decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              border: Border.all(color: Colors.yellow),
-            ),*/
             margin: const EdgeInsets.only(top: 25.0, left: 130.0),
             padding: const EdgeInsets.all(3.0),
             child: radioo,),
@@ -90,13 +77,6 @@ class ArtistDetailsPage extends StatelessWidget {
               fontSize: 20.0,
             ),
           ),
-
-          /*Container(
-            color: Colors.white.withOpacity(0.85),
-            margin: const EdgeInsets.symmetric(vertical: 16.0),
-            width: 225.0,
-            height: 1.0,
-          ),*/
           Text(
             artist.biography,
             style: TextStyle(

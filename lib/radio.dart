@@ -11,7 +11,6 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
 
   String url = "http://server.bitstreaming.net:9016/stream";
-  //String url = "https://ia802708.us.archive.org/3/items/count_monte_cristo_0711_librivox/count_of_monte_cristo_001_dumas.mp3";
 
   @override
   void initState() {
@@ -33,8 +32,6 @@ class _MyAppState extends State<MyApp> {
         body: Stack(
           fit: StackFit.expand,
           children: <Widget>[
-            //Image.asset('assets/fondo7.jpg', fit: BoxFit.cover),
-
             BackdropFilter(
               filter: ui.ImageFilter.blur(sigmaX: 1.0, sigmaY: 1.0),
               child: Container(

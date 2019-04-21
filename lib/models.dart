@@ -1,5 +1,4 @@
 import 'package:meta/meta.dart';
-import 'package:proyecto_flutter/radio.dart';
 
 class Artist {
   Artist({
@@ -11,7 +10,6 @@ class Artist {
     @required this.videos,
     @required this.labelimages,
     @required this.imagenes,
-    //@required this.radio
   });
 
   final String firstName;
@@ -22,7 +20,6 @@ class Artist {
   final List<Video> videos;
   final List<Imagen> imagenes;
   final String labelimages;
-  //final MyApp radio;
 }
 
 class Video {
@@ -39,12 +36,10 @@ class Video {
 
 class Imagen {
   Imagen({
-    //@required this.title,
     @required this.thumbnail,
     @required this.url,
   });
 
-  //final String title;
   final String thumbnail;
   final String url;
 }
